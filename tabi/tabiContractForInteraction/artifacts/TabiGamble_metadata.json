@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.24+commit.e11b9ed9"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -21,7 +21,39 @@
 						"type": "bool"
 					}
 				],
+				"name": "GambleResult",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "gambler",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
 				"name": "NewGamble",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "randNum",
+						"type": "uint256"
+					}
+				],
+				"name": "NewRandomNumber",
 				"type": "event"
 			},
 			{
@@ -39,7 +71,27 @@
 			},
 			{
 				"inputs": [],
-				"name": "GenerateRandNum",
+				"name": "CheckValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GambleStart",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_generateRandNum",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -64,9 +116,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"first.sol": "TabiGamble"
+			"tabi/tabiContractForInteraction/gamble.sol": "TabiGamble"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -78,12 +130,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"first.sol": {
-			"keccak256": "0x3dfacae59df0d6d5c3ac2c00ff9b2c0704473db1a091cfbbd387abb986907adf",
+		"tabi/tabiContractForInteraction/gamble.sol": {
+			"keccak256": "0xa59dd3ec7b8880ce18693d49f40b7105a0b5260c9174418477553a39f0b6d3c7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a166e0259dd7868e5e3f96ef29e76bfda7c142764d4f6627e73678181578df5c",
-				"dweb:/ipfs/QmNSKmz5iJUopv8TnTd1topZzFNYuuj3W2M1JWfh8f1q62"
+				"bzz-raw://75859caf5773e84db5efe64bd518b6984fd4eb3797793389b138581587606e09",
+				"dweb:/ipfs/QmaKZMYXoqFAFWD5tc5tHaZ4V8Th7LQ9rFTsfFMRxQk8Li"
 			]
 		}
 	},
