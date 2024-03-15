@@ -58,27 +58,8 @@
 			},
 			{
 				"inputs": [],
-				"name": "CheckResult",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "CheckValue",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"name": "Deposit",
+				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
@@ -91,15 +72,29 @@
 			},
 			{
 				"inputs": [],
-				"name": "_generateRandNum",
+				"name": "Ownable",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SendAll",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -131,11 +126,11 @@
 	},
 	"sources": {
 		"tabi/tabiContractForInteraction/gamble.sol": {
-			"keccak256": "0xa59dd3ec7b8880ce18693d49f40b7105a0b5260c9174418477553a39f0b6d3c7",
+			"keccak256": "0x9d1a90c9c948d96792dcc049742fda0e4e0dacb014e5f36ae25f877cd825c748",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://75859caf5773e84db5efe64bd518b6984fd4eb3797793389b138581587606e09",
-				"dweb:/ipfs/QmaKZMYXoqFAFWD5tc5tHaZ4V8Th7LQ9rFTsfFMRxQk8Li"
+				"bzz-raw://f5a5bf0784e6488e40ce1f164ab9631c5ae9dcdf67556e62f32ddccda6bed460",
+				"dweb:/ipfs/QmX6RpVw1C66M8vUYBaG7stQBJ16efekRifj1FwmDMepca"
 			]
 		}
 	},
